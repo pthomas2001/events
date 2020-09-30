@@ -9,6 +9,13 @@ $(".second").click(() => {
 })
 
 $("body").append('<button class="third">Third</button>')
+
+$("body").append('<input type="text"></input>')
+if ($("input").length <= 1) {
+    $("input") = "blue"
+}
+color = $("input")
+
 $(".third").click(() => {
-    $("button").css("background-color", "red")
+    $("button").css("background-color", `${color}`)
 })
